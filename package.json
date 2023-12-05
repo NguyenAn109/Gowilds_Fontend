@@ -20,6 +20,7 @@
     "@angular/router": "^17.0.0",
     "counterup2": "^2.0.2",
     "jquery": "^3.7.1",
+    "ngx-parallax-scroll": "^1.0.2",
     "rxjs": "~7.8.0",
     "slick-carousel": "^1.8.1",
     "tslib": "^2.3.0",

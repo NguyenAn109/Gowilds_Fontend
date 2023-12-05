@@ -34,6 +34,7 @@
               "node_modules/slick-carousel/slick/slick.min.js",
               "node_modules/counterup2/dist/index.js",
               "src/assets/auth/js/jquery.parallaxmouse.min.js",
+              "src/assets/user/vendor/wow.min.js",
               "src/assets/user/vendor/wow.min.js"
             ]
           },

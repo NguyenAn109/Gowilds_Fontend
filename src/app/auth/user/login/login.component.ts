@@ -1,12 +1,8 @@
 import {Component, ElementRef, Renderer2, ViewChild} from '@angular/core';
-import {NgOptimizedImage} from "@angular/common";
 declare var $: any;
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [
-    NgOptimizedImage
-  ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
@@ -25,18 +21,19 @@ export class LoginUserComponent {
     // Toggle input type between 'password' and 'text'
     input.type = input.type === 'password' ? 'text' : 'password';
   }
+
   ngAfterViewInit(): void {
     $(window).parallaxmouse({
       invert: true,
-      range: 400,
+      range: 600,
       elms: [
-        { el: $('#shape1'), rate: 0.8 },
-        { el: $('#shape2'), rate: 0.4 },
-        { el: $('#shape4'), rate: 0.3 },
-        { el: $('#shape5'), rate: 0.2 },
-        { el: $('#shape3'), rate: 0.12 },
-        { el: $('#shape6'), rate: 0.25 },
-        { el: $('#shape7'), rate: 0.19 }
+        {el: $('#shape1'), rate: 1.5},
+        {el: $('#shape2'), rate: 1.3},
+        {el: $('#shape4'), rate: 1.2},
+        {el: $('#shape5'), rate: 0.1},
+        {el: $('#shape3'), rate: 0.1},
+        {el: $('#shape6'), rate: 0.1},
+        {el: $('#shape7'), rate: 0.1}
       ]
     });
   }

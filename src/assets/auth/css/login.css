@@ -1,4 +1,13 @@
+/*==============
+  [00] Page General css
+=================*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
 
 
 .skill-wrapper, .footer-newsletter-widget .footer-content form .form_control, .sidebar-widget-area .booking-form-widget .sidebar-booking-form .bk-item .nice-select, .sidebar-widget-area .booking-form-widget .sidebar-booking-form .bk-item input, .sidebar-widget-area .sidebar-widget, .single-blog-post-four .entry-content .main-btn.filled-btn:hover i, .gw-testimonial-item-two, .destination-details-wrapper .destination-info .features-list li span, .single-place-item-three .place-content .meta .icon-btn, .single-place-item-three:hover, .single-place-item .place-content .info, .booking-form .nice-select:focus, .booking-form .form_control:focus, .booking-form-wrapper, .activity-nav-tab, .single-service-item-four .content .icon-btn, .single-service-item-four:hover, .single-service-item-three .content .meta span.rate, .single-service-item-three:hover, .single-service-item .content .icon-btn, .single-service-item, .video-popup, .single-event-item, .single-activity-item .content .meta, .single-counter-item-two .icon, .single-counter-item, .single-team-item, .fancy-icon-box-three .icon, .fancy-icon-box-two, .fancy-icon-box .icon, .single-features-list .icon-inner .icon, .single-features-item-three .content, .single-features-item .img-holder .content, .about-two_content-box .card-list .card-item, .hero-search-form, .hero-wrapper-three .hero-arrows .slick-arrow:hover, .navigation-white.header-navigation .navbar-toggler span, .header-four .header-navigation.sticky, .header-navigation.breakpoint-on .nav-menu, .header-navigation .main-menu ul > li .sub-menu, .preloader, .main-btn.filled-btn:hover i, .main-btn i, .white-bg {
@@ -139,6 +148,7 @@
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 .page-section .content-detail .parallax {
   position: absolute;
 }
@@ -146,33 +156,36 @@
   opacity: 0.7;
 }
 .page-section .content-detail #shape1 {
-  bottom: 20px;
-  right: 700px;
+  bottom: 100px;
+  right: 500px;
 }
-.page-section .content-detail #shape2 {
-  top: 75px;
-  left: 81px;
-}
-.page-section .content-detail #shape4 {
-  top: 40px;
-  left: 500px;
-}
-.page-section .content-detail #shape5 {
-  bottom: 138px;
-  left: 170px;
-}
-.page-section .content-detail #shape3 {
-  top: 300px;
-  right: 250px;
-}
-.page-section .content-detail #shape6 {
-  top: 220px;
-  right: 100px;
-}
-.page-section .content-detail #shape7 {
-  bottom: 10px;
-  right: 10px;
-}
+/*.parallax-bottom {*/
+/*  transform: translateY(50%);*/
+/*}*/
+/*.page-section .content-detail #shape2 {*/
+/*  top: 75px;*/
+/*  right: 581px;*/
+/*}*/
+/*.page-section .content-detail #shape4 {*/
+/*  top: 40px;*/
+/*  left: 290px;*/
+/*}*/
+/*.page-section .content-detail #shape5 {*/
+/*  bottom: 138px;*/
+/*  left: 170px;*/
+/*}*/
+/*.page-section .content-detail #shape3 {*/
+/*  top: 300px;*/
+/*  right: 250px;*/
+/*}*/
+/*.page-section .content-detail #shape6 {*/
+/*  top: 220px;*/
+/*  right: 100px;*/
+/*}*/
+/*.page-section .content-detail #shape7 {*/
+/*  bottom: 10px;*/
+/*  right: 10px;*/
+/*}*/
 
 /* Login Page css */
 .login-page {
@@ -670,3 +683,4 @@
     width: 25%;
   }
 }
+/*# sourceMappingURL=login.css.map */
