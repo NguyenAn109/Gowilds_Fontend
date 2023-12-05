@@ -1,0 +1,462 @@
+<!--====== Search From ======-->
+<div class="modal fade search-modal" id="search-modal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <form>
+        <div class="form_group">
+          <input type="search" class="form_control" placeholder="Search here" name="search">
+          <label><i class="fa fa-search"></i></label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div><!--====== Search From ======-->
+<!--====== Header Area ======-->-
+<header class="header-area header-four transparent-header">
+  <!--====== Header Navigation ======-->
+  <div class="header-navigation">
+    <div class="nav-overlay"></div>
+    <div class="container-fluid">
+      <div class="primary-menu">
+        <!--====== Site Branding ======-->
+        <div class="site-branding">
+          <a href="index.html" class="brand-logo"><img src="../../../../assets/user/images/logo/logo-black.png" alt="Site Logo"></a>
+        </div>
+        <!--====== Nav Menu ======-->
+        <div class="nav-menu">
+          <!--====== Site Branding ======-->
+          <div class="mobile-logo mb-30 d-block d-xl-none">
+            <a href="index.html" class="brand-logo"><img src="../../../../assets/user/images/logo/logo-black.png" alt="Site Logo"></a>
+          </div>
+          <!--=== Nav Search ===-->
+          <div class="nav-search mb-30 d-block d-xl-none ">
+            <form>
+              <div class="form_group">
+                <input type="email" class="form_control" placeholder="Search Here" name="email" required>
+                <button class="search-btn"><i class="fas fa-search"></i></button>
+              </div>
+            </form>
+          </div>
+          <!--====== main Menu ======-->
+          <nav class="main-menu">
+            <ul>
+              <li class="menu-item has-children"><a [routerLink]="['/index']">Home</a></li>
+              <li class="menu-item has-children"><a href="#">Tours</a>
+                <ul class="sub-menu">
+                  <li><a [routerLink]="['/index/tour']">Tours</a></li>
+                  <li><a href="tour-details.html">Tours Details</a></li>
+                </ul>
+              </li>
+              <li class="menu-item has-children"><a href="#">Destination</a>
+                <ul class="sub-menu">
+                  <li><a href="destination.html">Destination</a></li>
+                  <li><a href="destination-details.html">Destination Details</a></li>
+                </ul>
+              </li>
+              <li class="menu-item has-children"><a href="#">Blog</a>
+                <ul class="sub-menu">
+                  <li><a href="blog-list.html">Blog List</a></li>
+                  <li><a href="blog-details.html">Blog Details</a></li>
+                </ul>
+              </li>
+              <li class="menu-item has-children"><a href="#">Pages</a>
+                <ul class="sub-menu">
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="gallery.html">Our Gallery</a></li>
+                  <li><a href="events.html">Our Events</a></li>
+                  <li><a href="shop.html">Our Shop</a></li>
+                  <li><a href="product-details.html">Product Details</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </li>
+              <li class="menu-item search-item">
+                <div class="search-btn" data-bs-toggle="modal" data-bs-target="#search-modal"><i class="far fa-search"></i></div>
+              </li>
+            </ul>
+          </nav>
+          <!--====== Menu Button ======-->
+          <div class="menu-button mt-40 d-xl-none">
+            <a href="contact.html" class="main-btn secondary-btn">Book Now<i class="fas fa-paper-plane"></i></a>
+          </div>
+        </div>
+        <!--====== Nav Right Item ======-->
+        <div class="nav-right-item">
+          <div class="menu-button d-xl-block d-none">
+            <a href="contact.html" class="main-btn primary-btn">Book Now<i class="fas fa-paper-plane"></i></a>
+          </div>
+          <div class="navbar-toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header><!--====== End Area ======-->
+<!--====== Start Hero Section ======-->
+<section class="hero-section">
+  <!--=== Hero Wrapper ===-->
+  <div class="hero-wrapper-four">
+    <div class="shape"><span><img src="../../../../assets/user/images/hero/map.png" alt=""></span></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-7">
+          <!--=== Hero Content ===-->
+          <div class="hero-content">
+            <span class="sub-title wow fadeInUp" data-wow-delay=".3s">Welcome to GoWilds</span>
+            <h1 class="wow fadeInDown" data-wow-delay=".5s">Explore Dream
+              Tour & Travels</h1>
+            <p class="wow fadeInUp" data-wow-delay=".6s">Sit amet consectetur integer tincidunt sceleries nolesry volutpat fermentum
+              malesuada scelequecy leocras odio blandit rhoncus eues feugiat</p>
+            <!--=== Hero Search ===-->
+            <div class="hero-search-form mb-40 wow fadeInDown" data-wow-delay=".7s">
+              <form action="https://demo.webtend.net/html/gowilds/index-2.html" class="booking-form-two">
+                <div class="form_group">
+                  <span>Check In</span>
+                  <label><i class="far fa-calendar-alt"></i></label>
+                  <input type="text" class="form_control datepicker" placeholder="Check In">
+                </div>
+                <div class="form_group">
+                  <span>Check Out</span>
+                  <label><i class="far fa-calendar-alt"></i></label>
+                  <input type="text" class="form_control datepicker" placeholder="Check Out">
+                </div>
+                <div class="form_group">
+                  <span>Guest</span>
+                  <label><i class="far fa-user-alt"></i></label>
+                  <input type="text" class="form_control" placeholder="Guest" name="text">
+                </div>
+                <div class="form_group">
+                  <span>Accommodations</span>
+                  <select class="wide">
+                    <option value="01">Classic Tent</option>
+                    <option value="01">Forest Camping</option>
+                    <option value="01">Small Trailer</option>
+                    <option value="01">Tree House Tent</option>
+                    <option value="01">Tent Camping</option>
+                    <option value="01">Couple Tent</option>
+                  </select>
+                </div>
+                <div class="form_group">
+                  <button class="booking-btn">Check Availability <i class="far fa-angle-double-right"></i></button>
+                </div>
+              </form>
+            </div>
+            <div class="avatar-box wow fadeInUp" data-wow-delay=".75s">
+              <img src="../../../../assets/user/images/about/avater.png" alt="">
+              <span>35+ People booked their dream place</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 d-xl-block d-none">
+          <div class="hero-image wow fadeInRight" data-wow-delay=".8s">
+            <img src="../../../../assets/user/images/hero/hero-four_img-1.jpg" alt="hero image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!--====== End Hero Section ======-->
+
+<app-features-section></app-features-section>
+<!--=== Start What We Section ===-->
+<section class="who-we-section pt-100 pb-50">
+  <div class="container">
+    <div class="row align-items-xl-center">
+      <div class="col-xl-5 order-2 order-xl-1">
+        <!--=== We Image Box ===-->
+        <div class="we-image-box text-center text-xl-left pr-lg-30 mb-50 wow fadeInLeft">
+          <img src="../../../../assets/user/images/gallery/we-6.jpg" class="radius-top-left-right-288" alt="What We Image">
+        </div>
+      </div>
+      <div class="col-xl-7 order-1 order-xl-2">
+        <!--=== We Content Box ===-->
+        <div class="we-contnet-box mb-20 wow fadeInRight">
+          <!--=== Section Title ===-->
+          <div class="section-title mb-45">
+            <span class="sub-title">Who We Are</span>
+            <h2>Great Opportunity For
+              Adventure & Travels</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <!--=== Fancy Icon Box ===-->
+              <div class="fancy-icon-box-three mb-30">
+                <div class="icon">
+                  <i class="flaticon-camping"></i>
+                </div>
+                <div class="text">
+                  <h5 class="title">Tent Camping</h5>
+                  <a href="#" class="btn-link">Read More <i class="far fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!--=== Fancy Icon Box ===-->
+              <div class="fancy-icon-box-three mb-30">
+                <div class="icon">
+                  <i class="flaticon-biking-mountain"></i>
+                </div>
+                <div class="text">
+                  <h5 class="title">Mountain Biking</h5>
+                  <a href="#" class="btn-link">Read More <i class="far fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!--=== Fancy Icon Box ===-->
+              <div class="fancy-icon-box-three mb-30">
+                <div class="icon">
+                  <i class="flaticon-fishing-2"></i>
+                </div>
+                <div class="text">
+                  <h5 class="title">Fishing & Boat</h5>
+                  <a href="#" class="btn-link">Read More <i class="far fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!--=== Fancy Icon Box ===-->
+              <div class="fancy-icon-box-three mb-30">
+                <div class="icon">
+                  <i class="flaticon-caravan"></i>
+                </div>
+                <div class="text">
+                  <h5 class="title">Camping Trailer</h5>
+                  <a href="#" class="btn-link">Read More <i class="far fa-long-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!--=== End What We Section ===-->
+<app-service-section></app-service-section>
+<!--====== Start Places Section ======-->
+<section class="places-section pt-100 pb-70">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-7">
+        <!--=== Section Title ===-->
+        <div class="section-title text-center mb-50 wow fadeInDown">
+          <span class="sub-title">Popular Tour Place</span>
+          <h2>Visit & Enjoy Adventure Life
+            With Full Of Dreams</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <!--=== Single Place Item Three ===-->
+        <div class="single-place-item-three mb-30 wow fadeInUp">
+          <div class="place-img">
+            <img src="../../../../assets/user/images/place/place-20.jpg" alt="Place Image">
+          </div>
+          <div class="place-content">
+            <h4 class="title"><a href="tour-details.html">Hiking Mountains</a></h4>
+            <p class="location"><i class="far fa-map-marker-alt"></i>Arefu, AG, Romania</p>
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i>25 Feb 2023</span>
+              <a href="#" class="icon-btn"><i class="far fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <!--=== Single Place Item Three ===-->
+        <div class="single-place-item-three mb-30 wow fadeInUp">
+          <div class="place-img">
+            <img src="../../../../assets/user/images/place/place-21.jpg" alt="Place Image">
+          </div>
+          <div class="place-content">
+            <h4 class="title"><a href="tour-details.html">Surfer Riding Wave</a></h4>
+            <p class="location"><i class="far fa-map-marker-alt"></i>Arefu, AG, Romania</p>
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i>25 Feb 2023</span>
+              <a href="#" class="icon-btn"><i class="far fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <!--=== Single Place Item Three ===-->
+        <div class="single-place-item-three mb-30 wow fadeInUp">
+          <div class="place-img">
+            <img src="../../../../assets/user/images/place/place-22.jpg" alt="Place Image">
+          </div>
+          <div class="place-content">
+            <h4 class="title"><a href="tour-details.html">Tracing Hill On Cloud</a></h4>
+            <p class="location"><i class="far fa-map-marker-alt"></i>Arefu, AG, Romania</p>
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i>25 Feb 2023</span>
+              <a href="#" class="icon-btn"><i class="far fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <!--=== Single Place Item Three ===-->
+        <div class="single-place-item-three mb-30 wow fadeInUp">
+          <div class="place-img">
+            <img src="../../../../assets/user/images/place/place-23.jpg" alt="Place Image">
+          </div>
+          <div class="place-content">
+            <h4 class="title"><a href="tour-details.html">Hill House On Sea</a></h4>
+            <p class="location"><i class="far fa-map-marker-alt"></i>Gulf of Thailand, Thailand</p>
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i>25 Feb 2023</span>
+              <a href="#" class="icon-btn"><i class="far fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <!--=== Single Place Item Three ===-->
+        <div class="single-place-item-three mb-30 wow fadeInUp">
+          <div class="place-img">
+            <img src="../../../../assets/user/images/place/place-24.jpg" alt="Place Image">
+          </div>
+          <div class="place-content">
+            <h4 class="title"><a href="tour-details.html">Tent Camping</a></h4>
+            <p class="location"><i class="far fa-map-marker-alt"></i>Wilderness, United States</p>
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i>25 Feb 2023</span>
+              <a href="#" class="icon-btn"><i class="far fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <!--=== Single Place Item Three ===-->
+        <div class="single-place-item-three mb-30 wow fadeInUp">
+          <div class="place-img">
+            <img src="../../../../assets/user/images/place/place-25.jpg" alt="Place Image">
+          </div>
+          <div class="place-content">
+            <h4 class="title"><a href="tour-details.html">Hiking Mountains</a></h4>
+            <p class="location"><i class="far fa-map-marker-alt"></i>Arefu, AG, Romania</p>
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i>25 Feb 2023</span>
+              <a href="#" class="icon-btn"><i class="far fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <!--=== Single Place Item Three ===-->
+        <div class="single-place-item-three mb-30 wow fadeInUp">
+          <div class="place-img">
+            <img src="../../../../assets/user/images/place/place-26.jpg" alt="Place Image">
+          </div>
+          <div class="place-content">
+            <h4 class="title"><a href="tour-details.html">Climbing Up The Hills</a></h4>
+            <p class="location"><i class="far fa-map-marker-alt"></i>Arefu, AG, Romania</p>
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i>25 Feb 2023</span>
+              <a href="#" class="icon-btn"><i class="far fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+        <!--=== Single Place Item Three ===-->
+        <div class="single-place-item-three mb-30 wow fadeInUp">
+          <div class="place-img">
+            <img src="../../../../assets/user/images/place/place-27.jpg" alt="Place Image">
+          </div>
+          <div class="place-content">
+            <h4 class="title"><a href="tour-details.html">Tracing Hill On Cloud</a></h4>
+            <p class="location"><i class="far fa-map-marker-alt"></i>Nordegg, Canada</p>
+            <div class="meta">
+              <span><i class="far fa-calendar-alt"></i>25 Feb 2023</span>
+              <a href="#" class="icon-btn"><i class="far fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!--====== End Places Section ======-->
+<!--====== Start Why Choose Section ======-->
+<section class="why-choose-section gray-bg pt-100 pb-50">
+  <div class="container">
+    <div class="row align-items-xl-center">
+      <div class="col-xl-7">
+        <!--=== Choose Content Box ===-->
+        <div class="choose-content-box pr-lg-70">
+          <!--=== Section Title ===-->
+          <div class="section-title mb-45 wow fadeInDown">
+            <span class="sub-title">Why Choose Us</span>
+            <h2>People Why Choose
+              Our Travel Adventure</h2>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <!--=== Fancy Icon Box ===-->
+              <div class="fancy-icon-box-four mb-45 wow fadeInUp">
+                <div class="icon">
+                  <i class="flaticon-rabbit"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title">Best Security</h4>
+                  <p>We denounce with righteous
+                    indignation and dislike</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!--=== Fancy Icon Box ===-->
+              <div class="fancy-icon-box-four mb-45 wow fadeInUp">
+                <div class="icon">
+                  <i class="flaticon-wifi-router"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title">Free Internet</h4>
+                  <p>We denounce with righteous
+                    indignation and dislike</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!--=== Fancy Icon Box ===-->
+              <div class="fancy-icon-box-four mb-45 wow fadeInUp">
+                <div class="icon">
+                  <i class="flaticon-solar-energy"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title">Solar Energy</h4>
+                  <p>We denounce with righteous
+                    indignation and dislike</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <!--=== Fancy Icon Box ===-->
+              <div class="fancy-icon-box-four mb-45 wow fadeInUp">
+                <div class="icon">
+                  <i class="flaticon-cycling"></i>
+                </div>
+                <div class="text">
+                  <h4 class="title">Mountain Biking</h4>
+                  <p>We denounce with righteous
+                    indignation and dislike</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-5">
+        <!--=== Experience Box ===-->
+        <div class="experience-box text-center text-xl-right mb-50 wow fadeInRight">
+          <img src="../../../../assets/user/images/features/years.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!--====== End Why Choose Section ======-->
+<app-testimonial-section></app-testimonial-section>
+<app-partners-section></app-partners-section>
