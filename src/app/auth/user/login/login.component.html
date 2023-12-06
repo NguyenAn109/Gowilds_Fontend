@@ -1,1 +1,50 @@
-<p>login works!</p>
+<section class="page-section login-page ">
+  <div class="full-width-screen">
+    <div class="container-fluid">
+      <div class="content-detail">
+        <div class="main-info">
+          <div class="hero-container">
+            <!-- Login form -->
+            <form class="login-form" method="post">
+              <div class="imgcontainer">
+                <a [routerLink]="['/index']"><img src="./assets/user/images/logo/logo-black.png" alt="Avatar" class="avatar"></a>
+              </div>
+              <div class="input-control">
+                <input type="text" placeholder="Enter Username" name="uname" required >
+                <span class="password-field-show">
+                                        <input type="password" #passwordInput placeholder="Enter Password"
+                                               name="password"
+                                               class="password-field" value="" required>
+                                        <span (click)="togglePasswordVisibility()" data-toggle=".password-field"
+                                              class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                                    </span>
+                <label class="label-container">Remember me
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                <span class="psw"><a [routerLink]="['/forgot-password']" class="forgot-btn">Forgot
+                                            password?</a></span>
+                <div class="login-btns">
+                  <button type="submit">Login</button>
+                </div>
+                <div class="division-lines">
+                  <p>or login with</p>
+                </div>
+                <div class="login-with-btns">
+                  <button type="button" class="google"><i class="fab fa-google"></i></button>
+                  <button type="button" class="facebook"><i
+                    class="fab fa-facebook-f"></i></button>
+                  <button type="button" class="twitter"><i class="fab fa-twitter"></i></button>
+                  <button type="button" class="linkedin"><i
+                    class="fab fa-linkedin-in"></i></button>
+                  <span class="already-acc">Not a member? <a [routerLink]="['/sign-up']"
+                                                             class="signup-btn">Sign up</a></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

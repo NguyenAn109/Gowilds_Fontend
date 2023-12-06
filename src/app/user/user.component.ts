@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {AppComponent} from "../app.component";
-import {FooterComponent} from "./components/footer/footer.component";
+import {FooterComponent} from "./components/doashboard-components/footer/footer.component";
 import {HomePageComponent} from "./page/home-page/home-page.component";
 import {RouterOutlet} from "@angular/router";
 
@@ -17,5 +17,4 @@ import {RouterOutlet} from "@angular/router";
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-
 }

@@ -40,26 +40,31 @@
           <!--====== main Menu ======-->
           <nav class="main-menu">
             <ul>
-              <li class="menu-item has-children"><a [routerLink]="['/index']">Home</a></li>
-              <li class="menu-item has-children"><a href="#">Tours</a>
+              <li class="menu-item has-children"><a [routerLink]="['/index']" >Home</a></li>
+              <li class="menu-item has-children"><a [routerLink]="['/index/tour']">Tours <i class="far fa-angle-down"></i></a>
                 <ul class="sub-menu">
-                  <li><a [routerLink]="['/index/tour']">Tours</a></li>
-                  <li><a href="tour-details.html">Tours Details</a></li>
+                  <li><a [routerLink]="['/index/tour']">Tour Hạ Long </a></li>
+                  <li><a [routerLink]="['/index/tour']">Tour Phú Quốc</a></li>
+                  <li><a [routerLink]="['/index/tour']">Tour Đà Lạt</a></li>
+                  <li><a [routerLink]="['/index/tour']">Tour Hội An</a></li>
+                  <li><a [routerLink]="['/index/tour']">Tour SaPa</a></li>
+                  <li><a [routerLink]="['/index/tour']">Tour Nha Trang</a></li>
+                  <li><a [routerLink]="['/index/tour/tour-details']">Tours Details</a></li>
                 </ul>
               </li>
-              <li class="menu-item has-children"><a href="#">Destination</a>
+              <li class="menu-item has-children"><a href="#">Destination <i class="far fa-angle-down"></i></a>
                 <ul class="sub-menu">
-                  <li><a href="destination.html">Destination</a></li>
-                  <li><a href="destination-details.html">Destination Details</a></li>
+                  <li><a href="destination.html">Destination </a></li>
+                  <li><a href="destination-details.html">Destination Details </a></li>
                 </ul>
               </li>
-              <li class="menu-item has-children"><a href="#">Blog</a>
+              <li class="menu-item has-children"><a href="#">Blog <i class="far fa-angle-down"></i></a>
                 <ul class="sub-menu">
-                  <li><a href="blog-list.html">Blog List</a></li>
+                  <li><a href="blog-list.html">Blog List </a></li>
                   <li><a href="blog-details.html">Blog Details</a></li>
                 </ul>
               </li>
-              <li class="menu-item has-children"><a href="#">Pages</a>
+              <li class="menu-item has-children"><a href="#">Pages <i class="far fa-angle-down"></i></a>
                 <ul class="sub-menu">
                   <li><a href="about.html">About Us</a></li>
                   <li><a href="gallery.html">Our Gallery</a></li>
@@ -82,6 +87,7 @@
         <!--====== Nav Right Item ======-->
         <div class="nav-right-item">
           <div class="menu-button d-xl-block d-none">
+            <a [routerLink]="['/login']" class="btn fw-medium primary-btn" style="margin-right: 30px; font-size: 16px">Login</a>
             <a href="contact.html" class="main-btn primary-btn">Book Now<i class="fas fa-paper-plane"></i></a>
           </div>
           <div class="navbar-toggler">
@@ -460,3 +466,4 @@
 </section><!--====== End Why Choose Section ======-->
 <app-testimonial-section></app-testimonial-section>
 <app-partners-section></app-partners-section>
+<app-footer></app-footer>
