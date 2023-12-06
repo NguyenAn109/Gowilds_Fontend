@@ -1,3 +1,4 @@
+/*----  Login, Signup and forget password css  ----*/
 /*==============
   [00] Page General css
 =================*/
@@ -5,11 +6,16 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-
+/*====== Start Preloader css ======*/
 .skill-wrapper, .footer-newsletter-widget .footer-content form .form_control, .sidebar-widget-area .booking-form-widget .sidebar-booking-form .bk-item .nice-select, .sidebar-widget-area .booking-form-widget .sidebar-booking-form .bk-item input, .sidebar-widget-area .sidebar-widget, .single-blog-post-four .entry-content .main-btn.filled-btn:hover i, .gw-testimonial-item-two, .destination-details-wrapper .destination-info .features-list li span, .single-place-item-three .place-content .meta .icon-btn, .single-place-item-three:hover, .single-place-item .place-content .info, .booking-form .nice-select:focus, .booking-form .form_control:focus, .booking-form-wrapper, .activity-nav-tab, .single-service-item-four .content .icon-btn, .single-service-item-four:hover, .single-service-item-three .content .meta span.rate, .single-service-item-three:hover, .single-service-item .content .icon-btn, .single-service-item, .video-popup, .single-event-item, .single-activity-item .content .meta, .single-counter-item-two .icon, .single-counter-item, .single-team-item, .fancy-icon-box-three .icon, .fancy-icon-box-two, .fancy-icon-box .icon, .single-features-list .icon-inner .icon, .single-features-item-three .content, .single-features-item .img-holder .content, .about-two_content-box .card-list .card-item, .hero-search-form, .hero-wrapper-three .hero-arrows .slick-arrow:hover, .navigation-white.header-navigation .navbar-toggler span, .header-four .header-navigation.sticky, .header-navigation.breakpoint-on .nav-menu, .header-navigation .main-menu ul > li .sub-menu, .preloader, .main-btn.filled-btn:hover i, .main-btn i, .white-bg {
   background-color: #fff;
 }
@@ -25,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-pack: center;
   justify-content: center;
 }
-/*====== Start Preloader css ======*/
+
 .preloader {
   bottom: 0;
   height: 100vh;
@@ -44,7 +50,7 @@ h1, h2, h3, h4, h5, h6 {
 .preloader .pre-box {
   width: 50px;
   height: 50px;
-  background: #63AB45;
+  background: #63ab45;
   -webkit-animation: loaderAnimate 0.5s linear infinite;
   animation: loaderAnimate 0.5s linear infinite;
   position: absolute;
@@ -125,12 +131,10 @@ h1, h2, h3, h4, h5, h6 {
   [01] Page css
 =================*/
 .page-section {
-  background-image: url("../images/background-3.png");
+  background-image: url("../images/background-1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  overflow: hidden;
-  position: relative;
 }
 .page-section .content-detail {
   height: 100vh;
@@ -138,54 +142,87 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
-.page-section .content-detail .parallax {
-  position: absolute;
+.page-section .content-detail .sub-title,
+.page-section .content-detail .detail-text {
+  display: block;
+  color: #63ab45;
+  text-align: center;
 }
-.page-section .content-detail #shape1, .page-section .content-detail #shape2, .page-section .content-detail #shape3, .page-section .content-detail #shape4, .page-section .content-detail #shape5, .page-section .content-detail #shape6, .page-section .content-detail #shape7 {
-  opacity: 0.7;
+.page-section .content-detail .sub-title {
+  margin-bottom: 15px;
+  font-weight: 600;
+  font-size: 30px;
 }
-.page-section .content-detail #shape1 {
-  bottom: 100px;
-  right: 500px;
+.page-section .content-detail .global-title {
+  display: block;
+  color: #5bc86d;
+  font-size: 150px;
+  font-weight: 800;
 }
-/*.parallax-bottom {*/
-/*  transform: translateY(50%);*/
-/*}*/
-/*.page-section .content-detail #shape2 {*/
-/*  top: 75px;*/
-/*  right: 581px;*/
-/*}*/
-/*.page-section .content-detail #shape4 {*/
-/*  top: 40px;*/
-/*  left: 290px;*/
-/*}*/
-/*.page-section .content-detail #shape5 {*/
-/*  bottom: 138px;*/
-/*  left: 170px;*/
-/*}*/
-/*.page-section .content-detail #shape3 {*/
-/*  top: 300px;*/
-/*  right: 250px;*/
-/*}*/
-/*.page-section .content-detail #shape6 {*/
-/*  top: 220px;*/
-/*  right: 100px;*/
-/*}*/
-/*.page-section .content-detail #shape7 {*/
-/*  bottom: 10px;*/
-/*  right: 10px;*/
-/*}*/
+.page-section .content-detail .global-title span {
+  -webkit-animation: animateblur 1s linear forwards;
+          animation: animateblur 1s linear forwards;
+}
+.page-section .content-detail .global-title span:nth-child(1) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.page-section .content-detail .global-title span:nth-child(2) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.page-section .content-detail .global-title span:nth-child(3) {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+@-webkit-keyframes animateblur {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+@keyframes animateblur {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+            filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+.page-section .content-detail .back-btn {
+  margin-top: 15px;
+}
+.page-section .content-detail .back-btn .btn {
+  padding: 8px 15px;
+  color: #63ab45;
+  border: 1px solid #63ab45;
+  border-radius: 30px;
+  font-size: 14px;
+}
+.page-section .content-detail .back-btn .btn:hover {
+  background-color: #63ab45;
+  color: #fff;
+}
 
 /* Login Page css */
 .login-page {
@@ -194,11 +231,11 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .login-page #particles-js {
   position: fixed;
@@ -213,8 +250,8 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .login-page .login-form,
 .login-page .forgot-form {
@@ -231,8 +268,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid transparent;
   border-radius: 30px;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
-  z-index: 5;
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
 }
 .login-page .login-form p,
 .login-page .signup-form p,
@@ -291,7 +327,7 @@ h1, h2, h3, h4, h5, h6 {
   border-left: 0;
   border-right: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   border-radius: 5px;
   font-size: 14px;
   color: #666;
@@ -309,7 +345,7 @@ h1, h2, h3, h4, h5, h6 {
 .login-page .forgot-form .input-control input[type=email]:focus,
 .login-page .forgot-form .input-control input[type=password]:focus {
   border-radius: 5px;
-  border-bottom: 2px solid #48cba4;
+  border-bottom: 2px solid #63ab45;
   outline: none !important;
 }
 .login-page .login-form .input-control input[type=text]::-webkit-input-placeholder, .login-page .login-form .input-control input[type=email]::-webkit-input-placeholder, .login-page .login-form .input-control input[type=password]::-webkit-input-placeholder, .login-page .signup-form .input-control input[type=text]::-webkit-input-placeholder, .login-page .signup-form .input-control input[type=email]::-webkit-input-placeholder, .login-page .signup-form .input-control input[type=password]::-webkit-input-placeholder, .login-page .forgot-form .input-control input[type=text]::-webkit-input-placeholder, .login-page .forgot-form .input-control input[type=email]::-webkit-input-placeholder, .login-page .forgot-form .input-control input[type=password]::-webkit-input-placeholder {
@@ -362,16 +398,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #868686;
   line-height: 25px;
   -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 .login-page .login-form .input-control .label-container a,
 .login-page .signup-form .input-control .label-container a,
 .login-page .forgot-form .input-control .label-container a {
-  color: #48cba4;
+  color: #63ab45;
   font-weight: 600;
 }
 .login-page .login-form .input-control .label-container:hover input ~ .checkmark,
@@ -420,12 +456,12 @@ h1, h2, h3, h4, h5, h6 {
   border: solid white;
   border-width: 0 2px 2px 0;
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .login-page .login-form .input-control .label-container input:checked ~ .checkmark,
 .login-page .signup-form .input-control .label-container input:checked ~ .checkmark,
 .login-page .forgot-form .input-control .label-container input:checked ~ .checkmark {
-  background-color: #48cba4;
+  background-color: #63ab45;
 }
 .login-page .login-form .input-control .label-container input:checked ~ .checkmark:after,
 .login-page .signup-form .input-control .label-container input:checked ~ .checkmark:after,
@@ -442,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 .login-page .signup-form .input-control span.psw a,
 .login-page .forgot-form .input-control span.psw a {
   font-size: 13px;
-  color: #48cba4;
+  color: #63ab45;
   font-weight: 500;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
@@ -461,7 +497,7 @@ h1, h2, h3, h4, h5, h6 {
 .login-page .login-form .input-control .login-btns button,
 .login-page .signup-form .input-control .login-btns button,
 .login-page .forgot-form .input-control .login-btns button {
-  background-color: #48cba4;
+  background-color: #63ab45;
   color: white;
   padding: 8px 15px;
   margin: 8px 0;
@@ -478,8 +514,8 @@ h1, h2, h3, h4, h5, h6 {
 .login-page .signup-form .input-control .login-btns button:hover,
 .login-page .forgot-form .input-control .login-btns button:hover {
   background-color: transparent;
-  color: #48cba4;
-  border: 2px solid #48cba4;
+  color: #63ab45;
+  border: 2px solid #63ab45;
 }
 .login-page .login-form .input-control .division-lines,
 .login-page .signup-form .input-control .division-lines,
@@ -549,11 +585,11 @@ h1, h2, h3, h4, h5, h6 {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 2px solid #c3c3c3;
   border-radius: 30px;
   background-color: transparent;
@@ -630,7 +666,7 @@ h1, h2, h3, h4, h5, h6 {
 .login-page .signup-form .input-control .login-with-btns .already-acc a,
 .login-page .forgot-form .input-control .login-with-btns .already-acc a {
   padding: 0 5px;
-  color: #48cba4;
+  color: #63ab45;
   background-color: transparent;
   text-decoration: none;
   font-weight: 600;
@@ -652,26 +688,26 @@ h1, h2, h3, h4, h5, h6 {
     top: 15%;
   }
   .login-page .modal .input-control input[type=text],
-  .login-page .modal .input-control input[type=email],
-  .login-page .modal .input-control input[type=password] {
+.login-page .modal .input-control input[type=email],
+.login-page .modal .input-control input[type=password] {
     padding: 10px 20px;
   }
 }
 @media screen and (max-width: 576px) {
   .login-page .login-form,
-  .login-page .forgot-form {
+.login-page .forgot-form {
     width: 290px;
   }
   .login-page .signup-form {
     width: 290px;
   }
   .login-page .login-form .input-control .division-lines:before, .login-page .login-form .input-control .division-lines:after,
-  .login-page .signup-form .input-control .division-lines:before,
-  .login-page .signup-form .input-control .division-lines:after {
+.login-page .signup-form .input-control .division-lines:before,
+.login-page .signup-form .input-control .division-lines:after {
     width: 25%;
   }
   .login-page .login-form .input-control .division-lines p,
-  .login-page .signup-form .input-control .division-lines p {
+.login-page .signup-form .input-control .division-lines p {
     width: 50%;
   }
 }

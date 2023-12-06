@@ -1,9 +1,13 @@
 import {Component, ElementRef, Renderer2, ViewChild} from '@angular/core';
+import {RouterLink} from "@angular/router";
 declare var $: any;
 @Component({
   selector: 'app-login',
   standalone: true,
   templateUrl: './login.component.html',
+  imports: [
+    RouterLink
+  ],
   styleUrl: './login.component.css'
 })
 export class LoginUserComponent {
@@ -20,21 +24,5 @@ export class LoginUserComponent {
 
     // Toggle input type between 'password' and 'text'
     input.type = input.type === 'password' ? 'text' : 'password';
-  }
-
-  ngAfterViewInit(): void {
-    $(window).parallaxmouse({
-      invert: true,
-      range: 600,
-      elms: [
-        {el: $('#shape1'), rate: 1.5},
-        {el: $('#shape2'), rate: 1.3},
-        {el: $('#shape4'), rate: 1.2},
-        {el: $('#shape5'), rate: 0.1},
-        {el: $('#shape3'), rate: 0.1},
-        {el: $('#shape6'), rate: 0.1},
-        {el: $('#shape7'), rate: 0.1}
-      ]
-    });
   }
 }
